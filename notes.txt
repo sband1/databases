@@ -1,0 +1,25 @@
+Learn Presentation: https://docs.google.com/presentation/d/1GcfEnz38J1rn9TMmCf24lvJPUstWoYmSCc5b8oREXOs/embed?start=false&loop=false&delayms=3000&slide=id.g161f489c82_0_350
+
+***SQL COMMANDS***
+Create Database: https://dev.mysql.com/doc/refman/8.0/en/creating-database.html
+Create table/ USE TABLE https://www.techonthenet.com/mysql/tables/create_table.php
+Select columns https://www.w3schools.com/sql/sql_select.asp
+Show table *table name* shows all the tables
+DESCRIBE *table name* shows the table column table
+INSERT https://www.w3schools.com/sql/sql_insert.asp
+UPDATE https://www.w3schools.com/sql/sql_update.asp
+
+**KEY**
+Foregin Key https://www.w3schools.com/sql/sql_foreignkey.asp
+Primary Key https://www.w3schools.com/sql/sql_primarykey.ASP
+
+
+***DEFINITIONS***
+Schema: table
+Entities: table name example: teachers
+Field: Columns (age, names)
+Records: Rows (students)
+Values: cells (particular student's name)
+
+***SQL SET-UP***
+https://www.npmjs.com/package/mysql
