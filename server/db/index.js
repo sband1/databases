@@ -15,4 +15,4 @@ var connection = mysql.createConnection({
 // setup mySql server
 connection.connect();
 
-module.exports.connection;
+module.exports = connection;

@@ -7,7 +7,7 @@ module.exports = {
   getAll: function (callback) {
     // https://www.npmjs.com/package/mysql
     // do join to grab user names
-    db.connection.query('SELECT * FROM messages', (err, result) => {
+    db.query('SELECT * FROM messages', (err, result) => {
       if (err) {
         callback(err, null);
       } else {
@@ -20,7 +20,8 @@ module.exports = {
   },
   // var data = [req.body.message, req.body.username, req.body.roomname];
   create: function (data, callback) {
-    db.connection.query('INSERT INTO messages(msg_text, user_id, room_id) values(?, (select user_id from users where username = ?), (select room_id from rooms where room_name = ?)', data, (err, result) => {
+    console.log(data);
+    db.query('INSERT INTO messages(msg_txt, user_id, room_id) value (?, (select user_id from users where username = ? limit 1), (select room_id from rooms where room_name = ?))', data, (err, result) => {
       if (err) {
         callback(err, null);
       } else {

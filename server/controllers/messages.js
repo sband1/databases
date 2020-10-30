@@ -14,10 +14,11 @@ module.exports = {
     });
   },
   post: function (req, res) {
-    console.log(req);
+    console.log(req.body);
     var data = [req.body.message, req.body.username, req.body.roomname];
-    model.messages.create(data, (err, result) => {
+    models.messages.create(data, (err, result) => {
       if (err) {
+        console.log(err);
         res.sendStatus(404);
       } else {
         res.sendStatus(200);
