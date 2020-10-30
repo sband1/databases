@@ -20,6 +20,7 @@ app.use(parser.json());
 
 // Set up our routes
 app.use('/classes', router);
+//
 
 // Serve the client files
 app.use(express.static(__dirname + '/../client'));
@@ -30,3 +31,7 @@ if (!module.parent) {
   console.log('Listening on', app.get('port'));
 }
 
+// if err
+//   c.log app failed to start
+// else
+//   c.log listening on

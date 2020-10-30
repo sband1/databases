@@ -23,3 +23,12 @@ Values: cells (particular student's name)
 
 ***SQL SET-UP***
 https://www.npmjs.com/package/mysql
+
+
+- two servers are running
+    - sql server connects to js server
+
+how to debug server/db?
+
+lecture relevance to sprint
+sprint preparation
